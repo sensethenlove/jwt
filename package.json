@@ -1,0 +1,44 @@
+{
+  "name": "@sensethenlove/jwt",
+  "version": "1.0.3",
+  "author": "Sense Then Love",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "homepage": "https://github.com/sensethenlove/jwt#readme",
+  "description": "Node and/or Edge helper functions to create JWK's & create & verify JWT's w/ the subtle crypto api (ECDSA)",
+  "scripts": {
+    "build": "pnpm tsc",
+    "live": "pnpm build && npm publish --access public"
+  },
+  "keywords": [
+    "jwt",
+    "jwk",
+    "security",
+    "ECDSA",
+    "token",
+    "jsonwebtoken",
+    "svelte",
+    "sveltekit",
+    "typescript",
+    "cloudflare",
+    "cloudflare workers",
+    "browser",
+    "edge"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensethenlove/jwt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sensethenlove/jwt/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
