@@ -52,6 +52,7 @@ const payload = await verifyJWT(jwt, JWK_PUBLIC, Buffer)
 ```
 
 ### 💖 Our helpful packages!
+* [@sensethenlove/slug](https://www.npmjs.com/package/@sensethenlove/slug)
 * [@sensethenlove/toast](https://www.npmjs.com/package/@sensethenlove/toast)
 * [@sensethenlove/env-write](https://www.npmjs.com/package/@sensethenlove/env-write)
 * [@sensethenlove/global-style](https://www.npmjs.com/package/@sensethenlove/global-style)
