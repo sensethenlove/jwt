@@ -32,7 +32,7 @@ const expiresInAsSeconds = 32400 // 9 hours
 const jwt = await createJWT(jwtPayload, expiresInAsSeconds, JWK_PRIVATE, Buffer)
 ```
 
-### 💚 Example: Decode jwt
+### ❤️ Example: Decode jwt
 ```ts
 import { Buffer } from 'buffer/' // edge
 import { Buffer } from 'node:buffer' // node
@@ -49,6 +49,19 @@ import { verifyJWT } from '@sensethenlove/jwt'
 import { JWK_PUBLIC } from '$env/static/private'
 
 const payload = await verifyJWT(jwt, JWK_PUBLIC, Buffer)
+```
+
+### 💚 Errors
+* `JWTError` extends `Error`
+* All other errors below extend `JWTError`
+```ts
+import { JWTError, CreateTokenError, DecodeTokenError, VerifyTokenError, VerifyTokenExpiredError } from '@sensethenlove/jwt'
+
+try {
+  // jwt code
+} catch (e) {
+  if (e instanceof JWTError) console.log('foo')
+}
 ```
 
 ### 💖 Our helpful packages!
